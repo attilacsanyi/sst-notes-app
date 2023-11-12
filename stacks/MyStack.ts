@@ -1,4 +1,4 @@
-import { StackContext, Api, EventBus } from "sst/constructs";
+import { Api, EventBus, StackContext } from "sst/constructs";
 
 export function API({ stack }: StackContext) {
   const bus = new EventBus(stack, "bus", {
